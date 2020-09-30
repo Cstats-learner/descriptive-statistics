@@ -35,7 +35,7 @@ stats.median #=> 2
 stats.mode #=> 1
 ```
 
-###Meausres of Dispersion:
+###Measures of Dispersion:
 ```ruby
 stats = DescriptiveStatistics::Stats.new([1,1,2,3,10])
 stats.range #=> 9
