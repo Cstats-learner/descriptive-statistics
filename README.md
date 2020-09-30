@@ -27,7 +27,7 @@ Or install it yourself as:
 
 ## Usage
 
-### Central Tendency:
+###Measures of Central Tendency:
 ```ruby
 stats = DescriptiveStatistics::Stats.new([1,1,2,3,10])
 stats.mean #=> 3.4
@@ -35,7 +35,7 @@ stats.median #=> 2
 stats.mode #=> 1
 ```
 
-### Dispersion:
+###Meausres of Dispersion:
 ```ruby
 stats = DescriptiveStatistics::Stats.new([1,1,2,3,10])
 stats.range #=> 9
@@ -45,7 +45,7 @@ stats.percentile_from_value(10) #=> 80
 stats.value_from_percentile(60) #=> 3
 ```
 
-### Spread:
+###Measures of Spread or Varation:
 ```ruby
 stats = DescriptiveStatistics::Stats.new([1,1,2,3,10])
 stats.variance #=> 14.299999999999999
@@ -57,7 +57,7 @@ stats.relative_standard_deviation #=> 99.47961485463391
 ### Other Measures:
 ```ruby
 stats = DescriptiveStatistics::Stats.new([1,1,2,3,10])
-stats.skewness #=> 1.188328915820243
+stats.skewness #=> 1.188328915820243 #measure of symmetry
 stats.kurtosis #=> 2.405613966453127
 ```
 
